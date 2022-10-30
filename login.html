@@ -15,7 +15,46 @@
     <title>Login</title>
 </head>
 <body>
-    <h1>login</h1>
+  <section class="d-flex flex-column">
+     
+    <div class="container" id="signIncontainer">
+      
+            <div class="signInSection">
+                <h1>Login</h1>
+                <div class="row" id="contentROW">
+                    <div class="col-lg-12 col-md-12">
+                        <form action="index.html" id="signInForm">
+                        
+                            <div class="mb-3">
+                                <label for="email" class="form-label" id="emailLabel"></label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="test@Example.com">
+                               
+                              </div>
+                            <div class="mb-1">
+                              <label for="pass" class="form-label" id="passLabel"></label>
+                              <input type="password" class="form-control" id="pass" placeholder="Your Password">
+                            </div>
+                            <div class="btnDiv">
+                                <button type="submit" class="signInBtn" id="signInBtn">Sign In <i class="fa fa-arrow-right"></i></button>
+                                
+                            </div>                            
+                        </form>
+                    </div>
+                
+                </div>
+                
+            </div>
+            <footer>
+                <div class="footer">
+                    <p>Not have an account?</p>
+                    <a href="signUp.html" class="footerBtn" id="footerBtn">Sign Up</a>
+
+                    
+                </div>
+            </footer>
+    </div>
+</section>
+
 
 
       <!-- bootstrape -->

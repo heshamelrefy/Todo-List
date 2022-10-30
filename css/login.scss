@@ -1,0 +1,96 @@
+$border : 1px solid rgb(211, 211, 211);
+section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#signIncontainer{
+    border: $border;
+    width: 60%;
+    padding: 0;
+    .signInSection{
+        padding: 20px;
+        h1{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #contentROW{
+            margin-top: 30px;
+        }
+        .form-control{
+            background-color: transparent;
+            border-radius: 0px;
+        }
+        .signInBtn{
+            background-color: black;
+            padding: 15px 15px;
+            font-size: 15px;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+        .signInBtn:hover{
+            opacity: .8;
+            transition: 1s;
+        }
+        .btnDiv{
+            display: flex;
+            justify-content: end;
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 20px;
+        }
+        label{
+            font-size: 13px;
+            font-weight: bold;
+            color: rgb(95, 95, 95);
+        }
+        .form-control{
+            border: $border;
+        }
+        .form-control:focus{
+            box-shadow: none;
+        }
+       
+       
+        
+        @media(max-width: 992px){
+            .signInBtn{
+                width: 100%;
+            }
+        
+        }    
+       
+    }
+    .footer{
+        padding: 12px;
+        width: 100%;
+        background-color: #eeeded;
+        border-top: $border;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 13px;
+            font-weight: bold;
+            color: rgb(95, 95, 95);
+            margin: 0;
+            margin-right: 15px;
+        }
+        .footerBtn{
+            align-content: center;
+            background-color: transparent;
+            padding: 8px 15px;
+            font-size: 13px;
+            font-weight: bold;
+            color: rgb(95, 95, 95);
+            border: $border;
+        }
+        .footerBtn:hover{
+            background-color: #cfcdcd;            
+            border: 1px solid #cfcdcd;
+            transition: 1s;
+        }
+    }
+}
