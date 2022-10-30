@@ -14,7 +14,34 @@
     <title>Todo List</title>
 </head>
 <body>
-    
+    <nav class="nav justify-content-between px-4 py-3 align-items-center  bg-secondary">
+      <span id="userName">hesham</span>
+      <a class="nav-link text-decoration-none text-white" style="cursor: pointer;"     >LogOut</a>
+      
+    </nav>
+	<header>
+		<h1>Todo List</h1>
+		<form method="post" id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What do you have planned?" required />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add Task" />
+		</form>
+	</header>
+	<main>
+		<section class="task-list ">
+			<h2 id="tasksHeader" ></h2>
+
+			<div id="tasks">
+        <!-- Tasks Show Here -->
+			</div>
+		</section>
+	</main>
 
 
      <!-- bootstrape -->
