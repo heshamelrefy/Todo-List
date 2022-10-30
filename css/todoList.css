@@ -31,6 +31,16 @@ body {
   padding: 0;
 }
 
+nav #userName {
+  color: #090909;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav #userName span {
+  color: #ddd;
+}
+
 header {
   padding: 2rem 1rem;
   max-width: 800px;
@@ -45,22 +55,13 @@ header h1 {
   margin-bottom: 1rem;
 }
 
-#new-task-form {
+header #new-task-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-input, button {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: none;
-  outline: none;
-  background: none;
-}
-
-#new-task-input {
+header #new-task-input {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
@@ -72,23 +73,23 @@ input, button {
   font-size: 1.25rem;
 }
 
-#new-task-input::-webkit-input-placeholder {
+header #new-task-input::-webkit-input-placeholder {
   color: var(--grey);
 }
 
-#new-task-input:-ms-input-placeholder {
+header #new-task-input:-ms-input-placeholder {
   color: var(--grey);
 }
 
-#new-task-input::-ms-input-placeholder {
+header #new-task-input::-ms-input-placeholder {
   color: var(--grey);
 }
 
-#new-task-input::placeholder {
+header #new-task-input::placeholder {
   color: var(--grey);
 }
 
-#new-task-submit {
+header #new-task-submit {
   color: var(--pink);
   font-size: 1.25rem;
   font-weight: 700;
@@ -101,12 +102,21 @@ input, button {
   transition: 0.4s;
 }
 
-#new-task-submit:hover {
+header #new-task-submit:hover {
   opacity: 0.8;
 }
 
-#new-task-submit:active {
+header #new-task-submit:active {
   opacity: 0.6;
+}
+
+input, button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 main {
@@ -118,18 +128,14 @@ main {
   margin: 0 auto;
 }
 
-.task-list {
-  padding: 1rem;
-}
-
-.task-list h2 {
+main .task-list h2 {
   font-size: 1.5rem;
   font-weight: 300;
   color: var(--grey);
   margin-bottom: 1rem;
 }
 
-#tasks .task {
+main .task-list #tasks .task {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,13 +148,13 @@ main {
   margin-bottom: 1rem;
 }
 
-.task .content {
+main .task-list #tasks .task .content {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
 }
 
-.task .content .text {
+main .task-list #tasks .task .content .text {
   color: var(--light);
   font-size: 1.125rem;
   width: 100%;
@@ -157,22 +163,26 @@ main {
   transition: 0.4s;
 }
 
-.task .content .text:not(:-moz-read-only) {
+main .task-list #tasks .task .content .text:not(:-moz-read-only) {
   color: var(--pink);
 }
 
-.task .content .text:not(:read-only) {
+main .task-list #tasks .task .content .text:not(:read-only) {
   color: var(--pink);
 }
 
-.task .actions {
+main .task-list #tasks .task .content .complete {
+  text-decoration: line-through;
+}
+
+main .task-list #tasks .task .actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 -0.5rem;
 }
 
-.task .actions button {
+main .task-list #tasks .task .actions button {
   cursor: pointer;
   margin: 0 0.5rem;
   font-size: 1.125rem;
@@ -182,26 +192,22 @@ main {
   transition: 0.4s;
 }
 
-.task .actions button:hover {
+main .task-list #tasks .task .actions button:hover {
   opacity: 0.8;
 }
 
-.task .actions button:active {
+main .task-list #tasks .task .actions button:active {
   opacity: 0.6;
 }
 
-.task .actions .edit {
+main .task-list #tasks .task .actions .edit {
   background-image: -webkit-gradient(linear, left top, right top, from(var(--pink)), to(var(--purple)));
   background-image: linear-gradient(to right, var(--pink), var(--purple));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.task .actions .delete {
+main .task-list #tasks .task .actions .delete {
   color: crimson;
-}
-
-.complete {
-  text-decoration: line-through;
 }
 /*# sourceMappingURL=todoList.css.map */
